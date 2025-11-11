@@ -31,6 +31,9 @@ public class SFXManager : MonoBehaviour
     //called in the PlayerController Script
     public void PlayerShoot()
     {
+        float range = UnityEngine.Random.Range(.5f, 1.5f);
+
+        SFXaudioSource.pitch = range;
         SFXaudioSource.PlayOneShot(playerShoot, .5f);
     }
 
