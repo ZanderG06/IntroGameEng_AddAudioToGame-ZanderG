@@ -31,13 +31,13 @@ public class SFXManager : MonoBehaviour
     //called in the PlayerController Script
     public void PlayerShoot()
     {
-        SFXaudioSource.PlayOneShot(playerShoot);
+        SFXaudioSource.PlayOneShot(playerShoot, .5f);
     }
 
     //called in the PlayerController Script
     public void PlayerDamage()
     {
-        SFXaudioSource.PlayOneShot(playerDamage);
+        SFXaudioSource.PlayOneShot(playerDamage, .8f);
     }
 
     //called in the PlayerController Script
